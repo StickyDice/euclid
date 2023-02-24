@@ -4,20 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Lagoona</title>
 </head>
 
 <body>
   <header class="header">
     <div class="container">
-      <div class="header-top">
+      <div class="header-top flex">
         <img src="img/logo.jpg" alt="Логотип" class="header-logo">
         <a href="tel:+74953225448" class="phone">+7 495 322-54-48</a>
         <a href="#" class="signin">Личный кабинет</a>
       </div>
-      <div class="block-nav">
+      <div class="block-nav flex">
         <nav class="nav">
-          <ul class="nav-list">
+          <ul class="nav-list list-reset flex">
             <li class="nav-item">
               <a href="#about" class="nav-link">О нас</a>
             </li>
@@ -39,61 +41,74 @@
           </ul>
         </nav>
         <div class="header-btns">
-          <button class="btn block-nav-btn">Хочу тур</button>
-          <button class="btn block-nav-btn">Обратный звонок</button>
+          <button class="btn block-nav-btn btn-reset header-btn-right">Хочу тур</button>
+          <button class="btn block-nav-btn btn-reset">Обратный звонок</button>
         </div>
       </div>
     </div>
   </header>
 
   <main class="main">
-    <section id="special-offers" class="special-offers">
+    <section id="special-offers" class="special-offers section-offset">
       <div class="container">
         <h2 class="section-title special-offers-title">Спецпредложения</h2>
-        <ul class="offers-list">
-          <li class="offers-item">
-            <article class="offer-article">
-              <h3 class="offer-title">Мальдивские острова</h3>
-              <span class="offer-price">от 55 000</span>
-              <a href="#" class="more">Подробнее</a>
-            </article>
-          </li>
-          <li class="offers-item">
-            <article class="offer-article">
-              <h3 class="offer-title">Горящий тур на остров Крит</h3>
-              <span class="offer-price">от 30 000</span>
-              <a href="#" class="more">Подробнее</a>
-            </article>
-          </li>
-          <li class="offers-item">
-            <article class="offer-article">
-              <h3 class="offer-title">Номера категории люкс</h3>
-              <span class="offer-price">от 5 000</span>
-              <a href="#" class="more">Подробнее</a>
-            </article>
-          </li>
+        <ul class="offers-list list-reset flex">
+          <div class="left-offers flex">
+            <li class="offers-item offers-item-top">
+              <article class="offer-article top-article flex">
+                <h3 class="offer-title">Мальдивские острова</h3>
+                <span class="offer-price">от 55 000</span>
+                <p class="more-wrap">
+                  <a href="#" class="more">Подробнее</a>
+                </p>
+              </article>
+            </li>
+            <li class="offers-item">
+              <article class="offer-article bottom-article flex">
+                <h3 class="offer-title">Горящий тур на остров Крит</h3>
+                <span class="offer-price">от 30 000</span>
+                <p class="more-wrap">
+                  <a href="#" class="more">Подробнее</a>
+                </p>
+              </article>
+            </li>
+          </div>
+          <div class="right-offer">
+            <li class="offers-item offers-item-right flex">
+              <article class="offer-article right-article flex">
+                <h3 class="offer-title">Номера категории люкс</h3>
+                <span class="offer-price">от 5 000</span>
+                <p class="more-wrap">
+                  <a href="#" class="more">Подробнее</a>
+                </p>
+              </article>
+            </li>
+          </div>
         </ul>
       </div>
     </section>
-    <section id="about" class="about">
+    <section id="about" class="about section-offset">
       <div class="container">
-        <h2 class="section-title about-title">О нас</h2>
-        <p class="about-text">
-          Идейные соображения высшего порядка, а&nbsp;также сложившаяся структура организации влечёт за&nbsp;собой
-          процесс
-          внедрения и&nbsp;модернизации системы обучения кадров, соответствует насущным потребностям. Идейные
-          соображения
-          высшего порядка, а&nbsp;также дальнейшее развитие различных форм деятельности представляет собой интересный
-          эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся
-          структура организации требуют определения и&nbsp;уточнения существенных финансовых
-          и&nbsp;административных условий.
-        </p>
+        <div class="left-block">
+          <h2 class="section-title about-title">О нас</h2>
+          <p class="about-text">
+            Идейные соображения высшего порядка, а&nbsp;также сложившаяся структура организации влечёт за&nbsp;собой
+            процесс
+            внедрения и&nbsp;модернизации системы обучения кадров, соответствует насущным потребностям. Идейные
+            соображения
+            высшего порядка, а&nbsp;также дальнейшее развитие различных форм деятельности представляет собой интересный
+            эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом
+            сложившаяся
+            структура организации требуют определения и&nbsp;уточнения существенных финансовых
+            и&nbsp;административных условий.
+          </p>
+        </div>
       </div>
     </section>
-    <section id="services" class="services">
+    <section id="services" class="services section-offset">
       <div class="container">
         <h2 class="section-title services-title">Услуги</h2>
-        <ul class="services-list">
+        <ul class="services-list flex list-reset">
           <li class="services-item">
             <img src="img/service-1.jpg" alt="Эксклюзивное обслуживание" class="service-photo">
             <a href="#" class="service-link">Эксклюзивное обслуживание</a>
@@ -120,10 +135,10 @@
         </ul>
       </div>
     </section>
-    <section id="features" class="features">
+    <section id="features" class="features section-offset">
       <div class="container">
         <h2 class="section-title features-title">Преимущества</h2>
-        <ul class="features-list">
+        <ul class="features-list flex list-reset">
           <li class="features-item">
             <p class="feature-text">
               Идейные соображения высшего порядка,
@@ -168,14 +183,14 @@
         </ul>
       </div>
     </section>
-    <section id="placing" class="placing">
+    <section id="placing" class="placing section-offset">
       <div class="container">
         <h2 class="cection-title placing-title">Размещение</h2>
-        <ul class="placing-article">
+        <ul class="placing-list list-reset flex">
           <li class="placing-item">
-            <div class="placing-card">
-              <img src="img/placing-1.jpg" alt="Lagoona española" class="placing-photo">
-              <div class="price-review">
+            <img src="img/placing-1.jpg" alt="Lagoona española" class="placing-photo">
+            <div class="placing-card flex">
+              <div class="price-review flex">
                 <span class="price">от 4 698 / ночь</span>
                 <div class="placing-review">
                   <img src="img/star.svg" alt="Рейтинг" class="review">
@@ -187,13 +202,15 @@
               </div>
               <h3 class="placing-name">Lagoona española</h3>
               <span class="placing-title">Барселона, Испания</span>
-              <button class="btn placing-btn">Номера</button>
+              <p class="placing-btn-wrap">
+                <button class="btn placing-btn btn-reset">Номера</button>
+              </p>
             </div>
           </li>
           <li class="placing-item">
-            <div class="placing-card">
-              <img src="img/placing-2.jpg" alt="Lagoona son típicas" class="placing-photo">
-              <div class="price-review">
+            <img src="img/placing-2.jpg" alt="Lagoona son típicas" class="placing-photo">
+            <div class="placing-card flex">
+              <div class="price-review flex">
                 <span class="price">от 5 148 / ночь</span>
                 <div class="placing-review">
                   <img src="img/star.svg" alt="Рейтинг" class="review">
@@ -204,14 +221,16 @@
                 </div>
               </div>
               <h3 class="placing-name">Lagoona son típicas</h3>
-              <span class="placing-title">Барселона, Испания</ps>an
-              <button class="btn placing-btn">Номера</button>
+              <span class="placing-title">Барселона, Испания</span>
+              <p class="placing-btn-wrap">
+                <button class="btn placing-btn btn-reset">Номера</button>
+              </p>
             </div>
           </li>
           <li class="placing-item">
-            <div class="placing-card">
-              <img src="img/placing-3.jpg" alt="Lagoona de la guerra" class="placing-photo">
-              <div class="price-review">
+            <img src="img/placing-3.jpg" alt="Lagoona de la guerra" class="placing-photo">
+            <div class="placing-card flex">
+              <div class="price-review flex">
                 <span class="price">от 6 254 / ночь</span>
                 <div class="placing-review">
                   <img src="img/star.svg" alt="Рейтинг" class="review">
@@ -222,14 +241,16 @@
                 </div>
               </div>
               <h3 class="placing-name">Lagoona de la guerra</h3>
-              <span class="placing-title">Барселона, Испания</ps>an
-              <button class="btn placing-btn">Номера</button>
+              <span class="placing-title">Барселона, Испания</span>
+              <p class="placing-btn-wrap">
+                <button class="btn placing-btn btn-reset">Номера</button>
+              </p>
             </div>
           </li>
           <li class="placing-item">
-            <div class="placing-card">
-              <img src="img/placing-4.jpg" alt="Lagoona mentira piadosa" class="placing-photo">
-              <div class="price-review">
+            <img src="img/placing-4.jpg" alt="Lagoona mentira piadosa" class="placing-photo">
+            <div class="placing-card flex">
+              <div class="price-review flex">
                 <span class="price">от 6 320 / ночь</span>
                 <div class="placing-review">
                   <img src="img/star.svg" alt="Рейтинг" class="review">
@@ -240,14 +261,16 @@
                 </div>
               </div>
               <h3 class="placing-name">Lagoona mentira piadosa</h3>
-              <span class="placing-title">Барселона, Испания</ps>an
-              <button class="btn placing-btn">Номера</button>
+              <span class="placing-title">Барселона, Испания</span>
+              <p class="placing-btn-wrap">
+                <button class="btn placing-btn btn-reset">Номера</button>
+              </p>
             </div>
           </li>
           <li class="placing-item">
-            <div class="placing-card">
-              <img src="img/placing-5.jpg" alt="Lagoona empujar la creatividad" class="placing-photo">
-              <div class="price-review">
+            <img src="img/placing-5.jpg" alt="Lagoona empujar la creatividad" class="placing-photo">
+            <div class="placing-card flex">
+              <div class="price-review flex">
                 <span class="price">от 6 457 / ночь</span>
                 <div class="placing-review">
                   <img src="img/star.svg" alt="Рейтинг" class="review">
@@ -258,14 +281,16 @@
                 </div>
               </div>
               <h3 class="placing-name">Lagoona empujar la creatividad</h3>
-              <span class="placing-title">Барселона, Испания</ps>an
-              <button class="btn placing-btn">Номера</button>
+              <span class="placing-title">Барселона, Испания</span>
+              <p class="placing-btn-wrap">
+                <button class="btn placing-btn btn-reset">Номера</button>
+              </p>
             </div>
           </li>
           <li class="placing-item">
-            <div class="placing-card">
-              <img src="img/placing-6.jpg" alt="Lagoona el retorno" class="placing-photo">
-              <div class="price-review">
+            <img src="img/placing-6.jpg" alt="Lagoona el retorno" class="placing-photo">
+            <div class="placing-card flex">
+              <div class="price-review flex">
                 <span class="price">от 6 320 / ночь</span>
                 <div class="placing-review">
                   <img src="img/star.svg" alt="Рейтинг" class="review">
@@ -276,14 +301,16 @@
                 </div>
               </div>
               <h3 class="placing-name">Lagoona el retorno</h3>
-              <span class="placing-title">Барселона, Испания</ps>an
-              <button class="btn placing-btn">Номера</button>
+              <span class="placing-title">Барселона, Испания</span>
+              <p class="placing-btn-wrap">
+                <button class="btn placing-btn btn-reset">Номера</button>
+              </p>
             </div>
           </li>
           <li class="placing-item">
-            <div class="placing-card">
-              <img src="img/placing-7.jpg" alt="Lagoona mentira piadosa" class="placing-photo">
-              <div class="price-review">
+            <img src="img/placing-7.jpg" alt="Lagoona mentira piadosa" class="placing-photo">
+            <div class="placing-card flex">
+              <div class="price-review flex">
                 <span class="price">от 6 505 / ночь</span>
                 <div class="placing-review">
                   <img src="img/star.svg" alt="Рейтинг" class="review">
@@ -294,14 +321,16 @@
                 </div>
               </div>
               <h3 class="placing-name">Lagoona mentira piadosa</h3>
-              <span class="placing-title">Барселона, Испания</ps>an
-              <button class="btn placing-btn">Номера</button>
+              <span class="placing-title">Барселона, Испания</span>
+              <p class="placing-btn-wrap">
+                <button class="btn placing-btn btn-reset">Номера</button>
+              </p>
             </div>
           </li>
           <li class="placing-item">
-            <div class="placing-card">
-              <img src="img/placing-8.jpg" alt="Lagoona suerte siguió siempre" class="placing-photo">
-              <div class="price-review">
+            <img src="img/placing-8.jpg" alt="Lagoona suerte siguió siempre" class="placing-photo">
+            <div class="placing-card flex">
+              <div class="price-review flex">
                 <span class="price">от 6 824 / ночь</span>
                 <div class="placing-review">
                   <img src="img/star.svg" alt="Рейтинг" class="review">
@@ -312,14 +341,14 @@
                 </div>
               </div>
               <h3 class="placing-name">Lagoona suerte siguió siempre</h3>
-              <span class="placing-title">Барселона, Испания</ps>an
-              <button class="btn placing-btn">Номера</button>
+              <span class="placing-title">Барселона, Испания</span>
+              <p class="placing-btn-wrap">
+                <button class="btn placing-btn btn-reset">Номера</button>
+              </p>
             </div>
           </li>
-          <li class="placing-item">
-            <div class="placing-card">
-              <a href="#" class="more">Посмотреть все варианты</a>
-            </div>
+          <li class="placing-item empty-card flex">
+            <a href="#" class="empty-card-link">Посмотреть все варианты</a>
           </li>
         </ul>
       </div>
