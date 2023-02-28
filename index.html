@@ -52,39 +52,35 @@
     <section id="special-offers" class="special-offers section-offset">
       <div class="container">
         <h2 class="section-title special-offers-title">Спецпредложения</h2>
-        <ul class="offers-list list-reset flex">
+
+        <div class="offers-block flex">
           <div class="left-offers flex">
-            <li class="offers-item offers-item-top">
-              <article class="offer-article top-article flex">
-                <h3 class="offer-title">Мальдивские острова</h3>
-                <span class="offer-price">от 55 000</span>
-                <p class="more-wrap">
-                  <a href="#" class="more">Подробнее</a>
-                </p>
-              </article>
-            </li>
-            <li class="offers-item">
-              <article class="offer-article bottom-article flex">
-                <h3 class="offer-title">Горящий тур на остров Крит</h3>
-                <span class="offer-price">от 30 000</span>
-                <p class="more-wrap">
-                  <a href="#" class="more">Подробнее</a>
-                </p>
-              </article>
-            </li>
+            <article class="offer-article left-article flex left-top-article">
+              <h3 class="offer-title">Мальдивские острова</h3>
+              <span class="offer-price">от 55 000</span>
+              <p class="more-wrap">
+                <a href="#" class="more">Подробнее</a>
+              </p>
+            </article>
+            <article class="offer-article left-article flex left-bottom-article">
+              <h3 class="offer-title">Горящий тур на остров Крит</h3>
+              <span class="offer-price">от 30 000</span>
+              <p class="more-wrap">
+                <a href="#" class="more">Подробнее</a>
+              </p>
+            </article>
           </div>
-          <div class="right-offer">
-            <li class="offers-item offers-item-right flex">
-              <article class="offer-article right-article flex">
-                <h3 class="offer-title">Номера категории люкс</h3>
-                <span class="offer-price">от 5 000</span>
-                <p class="more-wrap">
-                  <a href="#" class="more">Подробнее</a>
-                </p>
-              </article>
-            </li>
+          <div class="right-offer flex">
+            <article class="offer-article right-article flex">
+              <h3 class="offer-title">Номера категории люкс</h3>
+              <span class="offer-price">от 5 000</span>
+              <p class="more-wrap">
+                <a href="#" class="more">Подробнее</a>
+              </p>
+            </article>
           </div>
-        </ul>
+        </div>
+
       </div>
     </section>
     <section id="about" class="about section-offset">
@@ -108,29 +104,39 @@
     <section id="services" class="services section-offset">
       <div class="container">
         <h2 class="section-title services-title">Услуги</h2>
-        <ul class="services-list flex list-reset">
+        <ul class="services-list list-reset">
           <li class="services-item">
             <img src="img/service-1.jpg" alt="Эксклюзивное обслуживание" class="service-photo">
-            <a href="#" class="service-link">Эксклюзивное обслуживание</a>
-            <p class="sevice-desc">Равным образом постоянный количественный рост и&nbsp;сфера нашей активности</p>
-          </li>
-          <li class="services-item">
-            <img src="img/service-2.jpg" alt="Сауны, бассейны, бани, фитнес-залы" class="service-photo">
-            <a href="#" class="service-link">Сауны, бассейны, бани, фитнес-залы</a>
-            <p class="sevice-desc">Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию
-              позиции</p>
+            <div class="service-card-bottom">
+              <a href="#" class="service-link">Эксклюзивное обслуживание</a>
+              <p class="service-desc">Равным образом постоянный количественный рост и&nbsp;сфера нашей активности</p>
+            </div>
           </li>
           <li class="services-item">
             <img src="img/service-3.jpg" alt="Аренда банкетных залов" class="service-photo">
-            <a href="#" class="service-link">Аренда банкетных залов</a>
-            <p class="sevice-desc">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
-            </p>
+            <div class="service-card-bottom">
+              <a href="#" class="service-link">Аренда банкетных залов</a>
+              <p class="service-desc">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
+              </p>
+            </div>
+          </li>
+          <li class="services-item">
+            <img src="img/service-2.jpg" alt="Сауны, бассейны, бани, фитнес-залы" class="service-photo">
+            <div class="service-card-bottom">
+              <a href="#" class="service-link">Сауны, бассейны, бани, фитнес-залы</a>
+              <p class="service-desc">Не&nbsp;следует, однако забывать, что начало повседневной работы
+                по&nbsp;формированию
+                позиции</p>
+            </div>
           </li>
           <li class="services-item">
             <img src="img/service-4.jpg" alt="Охраняемые автомобильные стоянки" class="service-photo">
-            <a href="#" class="service-link">Охраняемые автомобильные стоянки</a>
-            <p class="sevice-desc">Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию
-              позиции</p>
+            <div class="service-card-bottom">
+              <a href="#" class="service-link">Охраняемые автомобильные стоянки</a>
+              <p class="service-desc">Не&nbsp;следует, однако забывать, что начало повседневной работы
+                по&nbsp;формированию
+                позиции</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -138,45 +144,45 @@
     <section id="features" class="features section-offset">
       <div class="container">
         <h2 class="section-title features-title">Преимущества</h2>
-        <ul class="features-list flex list-reset">
+        <ul class="features-list list-reset">
           <li class="features-item">
-            <p class="feature-text">
+            <p class="feature-text feature-card-1">
               Идейные соображения высшего порядка,
               а&nbsp;также постоянный количественный рост
             </p>
           </li>
           <li class="features-item">
-            <p class="feature-text">
+            <p class="feature-text feature-card-2">
               Значимость этих проблем настолько очевидна, что вопрос остаётся открытым
             </p>
           </li>
           <li class="features-item">
-            <p class="feature-text">
+            <p class="feature-text feature-card-3">
               Таким образом реализация плановых заданий играет важную роль для понимания
             </p>
           </li>
           <li class="features-item">
-            <p class="feature-text">
+            <p class="feature-text feature-card-4">
               Повседневная практика показывает, что сложившаяся структура организации
             </p>
           </li>
           <li class="features-item">
-            <p class="feature-text">
+            <p class="feature-text feature-card-5">
               Равным образом рамки и&nbsp;место обучения кадров способствует подготовки сотрудника
             </p>
           </li>
           <li class="features-item">
-            <p class="feature-text">
+            <p class="feature-text feature-card-6">
               Консультация с&nbsp;активом влечёт за&nbsp;собой процесс внедрения услуг нашего сервиса
             </p>
           </li>
           <li class="features-item">
-            <p class="feature-text">
+            <p class="feature-text feature-card-7">
               Повседневная практика показывает, что дальнейшее развитие различных
             </p>
           </li>
           <li class="features-item">
-            <p class="feature-text">
+            <p class="feature-text feature-card-8">
               Значимость этого настолько очевидна, что консультация наших экспертов помогает
             </p>
           </li>
@@ -186,13 +192,13 @@
     <section id="placing" class="placing section-offset">
       <div class="container">
         <h2 class="cection-title placing-title">Размещение</h2>
-        <ul class="placing-list list-reset flex">
+        <ul class="placing-list list-reset">
           <li class="placing-item">
             <img src="img/placing-1.jpg" alt="Lagoona española" class="placing-photo">
             <div class="placing-card flex">
               <div class="price-review flex">
-                <span class="price">от 4 698 / ночь</span>
-                <div class="placing-review">
+                <span class="price"><span class="price-from">от</span> 4 698 <span class="price-for">/ ночь</span></span>
+                <div class="placing-review flex">
                   <img src="img/star.svg" alt="Рейтинг" class="review">
                   <img src="img/star.svg" alt="" class="review">
                   <img src="img/star.svg" alt="" class="review">
@@ -211,7 +217,7 @@
             <img src="img/placing-2.jpg" alt="Lagoona son típicas" class="placing-photo">
             <div class="placing-card flex">
               <div class="price-review flex">
-                <span class="price">от 5 148 / ночь</span>
+                <span class="price"><span class="price-from">от</span> 5 148 <span class="price-for">/ ночь</span></span>
                 <div class="placing-review">
                   <img src="img/star.svg" alt="Рейтинг" class="review">
                   <img src="img/star.svg" alt="" class="review">
@@ -231,7 +237,7 @@
             <img src="img/placing-3.jpg" alt="Lagoona de la guerra" class="placing-photo">
             <div class="placing-card flex">
               <div class="price-review flex">
-                <span class="price">от 6 254 / ночь</span>
+                <span class="price"><span class="price-from">от</span> 6 254 <span class="price-for">/ ночь</span></span>
                 <div class="placing-review">
                   <img src="img/star.svg" alt="Рейтинг" class="review">
                   <img src="img/star.svg" alt="" class="review">
@@ -251,7 +257,7 @@
             <img src="img/placing-4.jpg" alt="Lagoona mentira piadosa" class="placing-photo">
             <div class="placing-card flex">
               <div class="price-review flex">
-                <span class="price">от 6 320 / ночь</span>
+                <span class="price"><span class="price-from">от</span> 6 320 <span class="price-for">/ ночь</span></span>
                 <div class="placing-review">
                   <img src="img/star.svg" alt="Рейтинг" class="review">
                   <img src="img/star.svg" alt="" class="review">
@@ -271,7 +277,7 @@
             <img src="img/placing-5.jpg" alt="Lagoona empujar la creatividad" class="placing-photo">
             <div class="placing-card flex">
               <div class="price-review flex">
-                <span class="price">от 6 457 / ночь</span>
+                <span class="price"><span class="price-from">от</span> 6 457 <span class="price-for">/ ночь</span></span>
                 <div class="placing-review">
                   <img src="img/star.svg" alt="Рейтинг" class="review">
                   <img src="img/star.svg" alt="" class="review">
@@ -291,7 +297,7 @@
             <img src="img/placing-6.jpg" alt="Lagoona el retorno" class="placing-photo">
             <div class="placing-card flex">
               <div class="price-review flex">
-                <span class="price">от 6 320 / ночь</span>
+                <span class="price"><span class="price-from">от</span> 6 320 <span class="price-for">/ ночь</span></span>
                 <div class="placing-review">
                   <img src="img/star.svg" alt="Рейтинг" class="review">
                   <img src="img/star.svg" alt="" class="review">
@@ -311,7 +317,7 @@
             <img src="img/placing-7.jpg" alt="Lagoona mentira piadosa" class="placing-photo">
             <div class="placing-card flex">
               <div class="price-review flex">
-                <span class="price">от 6 505 / ночь</span>
+                <span class="price"><span class="price-from">от</span> 6 505 <span class="price-for">/ ночь</span></span>
                 <div class="placing-review">
                   <img src="img/star.svg" alt="Рейтинг" class="review">
                   <img src="img/star.svg" alt="" class="review">
@@ -331,7 +337,7 @@
             <img src="img/placing-8.jpg" alt="Lagoona suerte siguió siempre" class="placing-photo">
             <div class="placing-card flex">
               <div class="price-review flex">
-                <span class="price">от 6 824 / ночь</span>
+                <span class="price"><span class="price-from">от</span> 6 824 <span class="price-for">/ ночь</span></span>
                 <div class="placing-review">
                   <img src="img/star.svg" alt="Рейтинг" class="review">
                   <img src="img/star.svg" alt="" class="review">
