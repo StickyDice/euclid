@@ -267,7 +267,20 @@ body {
   min-height: 100%;
 }
 
+.left-top-article {
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("../img/top-left.jpg");
+}
+
+.left-bottom-article {
+  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("../img/bottom-left.jpg");
+}
+
+.right-article {
+  background-image: url("../img/right.jpg");
+}
+
 .offer-article {
+  position: relative;
   flex-direction: column;
   padding: 40px 108px 40px 45px;
   background-repeat: no-repeat;
@@ -280,16 +293,39 @@ body {
   margin-bottom: 24px;
 }
 
-.left-top-article {
-  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("../img/top-left.jpg");
+.more {
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--link-hover);
+  padding-right: 15px;
+  background-image: url('../img/more.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  transition: padding-right 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.left-bottom-article {
-  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("../img/bottom-left.jpg");
+.more::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: 1px solid transparent;
+  outline-offset: 0;
 }
 
-.right-article {
-  background-image: url("../img/right.jpg");
+.more:focus:after {
+  outline-color: var(--clickable-color);
+  outline-offset: 8px;
+}
+
+.more:hover {
+  padding-right: 25px;
+}
+
+.more:active {
+  color: #fff;
 }
 
 .left-article {
@@ -318,6 +354,10 @@ body {
   margin-bottom: 47px;
 }
 
+.right-offer {
+  position: relative;
+}
+
 .right-offer-title {
   font-size: 60px;
   line-height: 60px;
@@ -333,15 +373,6 @@ body {
   margin: 0;
 }
 
-.more {
-  font-size: 16px;
-  line-height: 16px;
-  color: var(--link-hover);
-  padding-right: 15px;
-  background-image: url('../img/more.svg');
-  background-repeat: no-repeat;
-  background-position: center right;
-}
 
 /* about */
 .about-left-block {
@@ -362,12 +393,13 @@ body {
 }
 
 .services-item {
+  position: relative;
   max-width: 573px;
   margin-bottom: 24px;
   background-color: #fff;
   border: 0px solid;
   border-radius: 15px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .services-item:not(:nth-child(2n)) {
@@ -382,6 +414,7 @@ body {
   display: block;
   width: 100%;
   object-fit: cover;
+  border-radius: 15px 15px 0 0;
 }
 
 .service-link {
@@ -389,10 +422,46 @@ body {
   font-size: 20px;
   line-height: 40px;
   color: #c93;
-  background-image: url("../img/service_detail.svg");
-  background-repeat: no-repeat;
-  background-position: center right;
-  padding-right: 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.service-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: 1px solid transparent;
+  outline-offset: 0px;
+}
+
+.service-link svg {
+  vertical-align: middle;
+  stroke: var(--clickable-color);
+  transition: stroke 0.3s ease-in-out, margin-left 0.3s ease-in-out;
+}
+
+.service-link:focus:after {
+  outline-color: var(--clickable-color);
+  outline-offset: 8px;
+}
+
+.service-link:hover svg {
+  margin-left: 8px;
+  stroke: var(--link-hover);
+}
+
+.service-link:active svg {
+  stroke: var(--clicable-active);
+}
+
+.service-link:hover {
+  color: var(--link-hover);
+}
+
+.service-link:active {
+  color: var(--clicable-active);
 }
 
 .service-desc {
@@ -484,6 +553,10 @@ body {
   margin-right: 24px;
 }
 
+.placing-item:last-child {
+  overflow: visible;
+}
+
 .placing-card {
   flex-direction: column;
   padding: 32px 45px 45px 45px;
@@ -561,6 +634,7 @@ body {
   background-repeat: no-repeat;
   background-position: center right;
   padding-right: 20px;
+  transition: padding 0.3s ease-in-out;
 }
 
 .empty-card-link:after {
@@ -570,6 +644,17 @@ body {
   height: 100%;
   top: 0;
   left: 0;
+  outline: 1px solid transparent;
+  outline-offset: 0;
+}
+
+.empty-card-link:focus:after {
+  outline-color: var(--clicable-active);
+  outline-offset: 8px;
+}
+
+.empty-card-link:hover {
+  padding-right: 30px;
 }
 
 /* tour */
