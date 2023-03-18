@@ -112,7 +112,10 @@ img {
 }
 
 .header__search {
+  padding: 0;
   margin-top: 2px;
+  background-color: transparent;
+  border: none;
 }
 
 .header__svg rect{
@@ -141,7 +144,6 @@ img {
   background-image: url('../img/building_1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 101px;
 }
 
 .hero__wrapper {
@@ -149,11 +151,10 @@ img {
   flex-direction: column;
   align-items: flex-start;
   max-width: 917px;
-  padding-left: 80px;
+  padding: 100px 0 101px 80px;
 }
 
 .hero__title {
-  padding-top: 100px;
   margin: 0;
   margin-bottom: 24px;
   font-size: 70px;
@@ -213,7 +214,7 @@ img {
 .card__wrapper {
   display: flex;
   align-items: center;
-  padding: 34px 50px;
+  padding: 50px 50px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -222,6 +223,7 @@ img {
   font-weight: 700;
   line-height: 32px;
   color: var(--light-color);
+  margin: 0;
   margin-right: 139px;
 }
 
@@ -307,7 +309,8 @@ img {
 
 .work-plan__link {
   text-decoration: none;
-  color: var(--base-color)
+  color: var(--base-color);
+  transition: color 0.3s ease-in-out;
 }
 
 .work-plan__link:focus {
@@ -403,10 +406,6 @@ img {
   color: var(--light-color);
 }
 
-.slide__photo {
-  margin-top: auto;
-}
-
 /* faq */
 .faq__title {
   margin-bottom: 42px;
@@ -425,7 +424,9 @@ img {
   font-weight: 700;
   line-height: 32px;
   color: var(--base-color);
-  border-top: 1px solid #CACACA;
+  margin-top: -1px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #CACACA;
   transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
@@ -433,8 +434,8 @@ img {
   transition: transform 0.3s ease-in-out;
 }
 
-.faq__item:last-child {
-  border-bottom: 1px solid #CACACA;
+.faq__item:first-child {
+  border-top: 1px solid #CACACA;
 }
 
 .faq__icon ellipse {
@@ -587,8 +588,8 @@ img {
   font-weight: 400;
   line-height: 32px;
   color: #FFF;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 15px;
+  padding-bottom: 13px;
   padding-left: 24px;
   background-color: #414141;
   border: none;
@@ -619,7 +620,7 @@ img {
 
 .form__message-field {
   padding-top: 14px;
-  padding-bottom: 98px;
+  padding-bottom: 72px;
   margin-bottom: 33px;
 }
 
