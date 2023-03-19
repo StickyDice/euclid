@@ -21,7 +21,6 @@ img {
 
 .page {
   font-family: 'Montserrat', sans-serif;
-  max-width: 1920px;
 }
 
 .list-reset {
@@ -50,10 +49,6 @@ img {
  background-color: #E1670E;
 }
 
-.section {
-  padding: 0 75px;
-}
-
 .section__title {
   font-size: 48px;
   font-weight: 400;
@@ -61,6 +56,12 @@ img {
   color: var(--base-color);
   padding-top: 100px;
   margin: 0;
+}
+
+.container {
+  max-width: 1920px;
+  padding: 0 75px;
+  margin: 0 auto;
 }
 
 /* header */
@@ -140,7 +141,7 @@ img {
 }
 
 /* hero */
-.hero__container {
+.container__background {
   background-image: url('../img/building_1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -152,6 +153,8 @@ img {
   align-items: flex-start;
   max-width: 917px;
   padding: 100px 0 101px 80px;
+  padding-right: auto;
+
 }
 
 .hero__title {
@@ -483,14 +486,11 @@ img {
 }
 
 /* footer */
-.footer {
-  background-color: var(--footer-color);
-}
-
 .footer__container {
   display: flex;
   padding: 50px 75px;
   justify-content: space-between;
+  background-color: var(--footer-color);
 }
 
 .footer__links {
