@@ -1,9 +1,4 @@
 @media (max-width: 1919px) {
-  .nav__list {
-    gap: 30px;
-    margin-right: 30px;
-  }
-
   .about__card-block {
     flex-wrap: wrap;
     justify-content: center;
@@ -19,12 +14,25 @@
     flex-shrink: 0;
   }
 
-  .footer__links {
-    margin-right: auto;
-  }
-
   .footer__form {
     padding: 0;
+  }
+
+}
+
+@media (max-width: 1440px) {
+  .nav__list {
+    gap: 45px;
+    margin-right: 45px;
+  }
+
+  .slide__info,
+  .slide__photo {
+    max-width: calc((100% - (142px)) / 2);
+  }
+
+  .footer__links {
+    margin-right: auto;
   }
 
   .footer__desc {
@@ -163,9 +171,13 @@
   .form__btn {
     padding: 18px 37px;
   }
+
+  .form__send {
+    gap: 10px;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .header__container {
     height: 69px;
   }
@@ -230,6 +242,7 @@
   }
 
   .slide__photo {
+    max-width: unset;
     max-height: 284px;
     overflow: hidden;
   }
@@ -262,7 +275,55 @@
   }
 }
 
-@media(max-width: 320px) {
+@media (max-width: 540px) {
+  .hero__title {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    margin-bottom: 7px;
+  }
+
+  .hero__desc {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    margin-bottom: 32px;
+  }
+
+  .hero__wrapper {
+    padding: 60px 21px;
+  }
+
+  .hero__btn {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    padding: 13px 29px;
+  }
+
+  .card__wrapper {
+    flex-direction: column;
+  }
+
+  .card-block__desc {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .card-group__wrapper {
+    background-position: top left;
+    padding: 0;
+    padding-top: 96px;
+  }
+
+  .slide__btns {
+    justify-content: space-between;
+    gap: unset;
+  }
+}
+
+@media (max-width: 425px) {
   .container {
     max-width: 320px;
     padding: 0 15px;
@@ -317,6 +378,7 @@
   .card-block__card {
     background-size: contain;
     min-height: unset;
+    background-position: top center;
   }
 
   .card-block__desc {
@@ -326,6 +388,7 @@
     color: var(--base-color);
     margin: 0;
     margin-bottom: 11px;
+    text-align: left;
   }
 
   .card__wrapper {

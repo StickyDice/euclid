@@ -215,6 +215,7 @@ img {
   background-image: url('../img/hard_worker.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   max-width: 868px;
   min-height: 622px;
   align-items: flex-end;
