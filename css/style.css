@@ -678,7 +678,7 @@ img {
   height: 14px;
   margin-right: 6px;
   border: 1px solid #CACACA;
-
+  flex-shrink: 0;
 }
 
 .checkbox__text::after {
