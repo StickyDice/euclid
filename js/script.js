@@ -45,9 +45,4 @@ tabsBtn.forEach(function(element){
 
 new Accordion(".accordion-container");
 
-let searchBtn = document.querySelector(".search-form__search");
-let form = document.querySelector(".search-form");
-searchBtn.addEventListener("click", () => {
-  form.classList.toggle("search-form_active");
-});
 

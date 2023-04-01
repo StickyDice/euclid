@@ -62,7 +62,6 @@
     height: 23px;
     border: none;
     background-color: transparent;
-    z-index: 10000;
     cursor: pointer;
     transform: translateY(-1px);
   }
@@ -252,6 +251,12 @@
     gap: 50px;
   }
 
+  .nav__link {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+  }
+
   .hero__wrapper {
     padding-left: 40px;
     padding-right: 40px;
@@ -355,12 +360,14 @@
   .header__nav {
     left: -100vw;
     width: 100vw;
-    padding: 78px 41px 71px 50px;
+    padding: 78px 41px 71px 53px;
     z-index: 10000;
   }
 
-  .burger {
-    z-index: 100000;
+  .nav__link {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
   }
 
   .hero__title {
@@ -418,6 +425,10 @@
   .container {
     max-width: 320px;
     padding: 0 15px;
+  }
+
+  .header__nav {
+    padding-left: 15px;
   }
 
   .hero__title {
@@ -680,20 +691,5 @@
 
   .network {
     width: 40px;
-  }
-
-  .search-form__input {
-    top: -34px;
-    right: -15px;
-    left: -305px;
-    bottom: -34px;
-    padding: 0;
-    padding-left: 15px;
-    border-radius: 0;
-  }
-
-  .search-form::after {
-    width: 195px;
-    padding-left: 15px;
   }
 }
