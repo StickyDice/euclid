@@ -236,6 +236,17 @@
   .no-scroll .container {
     padding-right: 67px;
   }
+
+  .search-form {
+    right: 50px;
+    width: 50vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .search-form_active {
+    top: 30px;
+  }
 }
 
 @media (max-width: 850px) {
@@ -354,6 +365,10 @@
   .footer__links {
     padding-left: 9px;
   }
+
+  .search-form_active {
+    top: 13px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -418,6 +433,20 @@
 
   .no-scroll .container {
     padding-right: 50px;
+  }
+
+  .search-form {
+    top: -100px;
+    left: 50px;
+    right: 50px;
+    width: unset;
+    border-radius: unset;
+  }
+
+  .search-form_active {
+    top: 0;
+    bottom: 0;
+    z-index: 100000;
   }
 }
 
@@ -691,5 +720,11 @@
 
   .network {
     width: 40px;
+  }
+
+  .search-form {
+    left: 0;
+    right: 0;
+    padding-left: 15px;
   }
 }
