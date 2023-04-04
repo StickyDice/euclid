@@ -592,6 +592,7 @@ img {
 }
 
 .faq__item:focus-visible {
+  outline: none;
   /* border-bottom: 1px solid; */
   color: var(--btn-color);
   border-color: var(--btn-color);
@@ -733,7 +734,7 @@ img {
   transition: fill 0.3s ease-in-out;
 }
 
-.social__link:focus .network {
+.social__link:focus {
   outline: 2px solid var(--btn-color);
   outline-offset: 5px;
 }
@@ -801,6 +802,10 @@ img {
   padding: 19px 53px;
 }
 
+.form__btn:focus {
+  outline: none;
+}
+
 .form__checkbox {
   font-size: 16px;
   font-weight: 400;
@@ -850,6 +855,14 @@ img {
 
 .checkbox__item:checked+.checkbox__text::after {
   display: block;
+}
+
+.checkbox__text:focus {
+  outline: none;
+}
+
+.checkbox__text:focus:before {
+  border-color: var(--btn-color);
 }
 
 .form__send {

@@ -48,7 +48,7 @@
           </li>
         </ul>
       </nav>
-      <button type="button" class="header__search-btn search-btn">
+      <button type="button" class="header__search-btn search-btn" aria-label="Найти">
         <svg class="search-btn__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <rect width="7.56126" height="1.89031"
@@ -58,9 +58,9 @@
             stroke="var(--base-color)" stroke-width="2" />
         </svg>
       </button>
-      <form action="" class="header__form search-form">
-        <input type="text" class="search-form__input" placeholder="Что будем искать?">
-        <button type="button" class="search-form__search-btn search-btn">
+      <form action="" class="header__form search-form" aria-hidden="true" aria-label="Форма поиска">
+        <input type="text" class="search-form__input" placeholder="Что будем искать?" tabindex="-1">
+        <button type="button" class="search-form__search-btn search-btn" tabindex="-1" aria-label="Поиск">
           <svg class="search-form__search-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <rect width="7.56126" height="1.89031"
@@ -70,12 +70,14 @@
               stroke="var(--base-color)" stroke-width="2" />
           </svg>
         </button>
-        <button type="button" class="search-form__close-btn">
+        <button type="button" class="search-form__close-btn" tabindex="-1" aria-label="Закрыть">
           <svg class="search-form__close-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             xmlns="http://www.w3.org/2000/svg">
-            <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)" fill="#999999"/>
-            <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)" fill="#999999"/>
-            <circle cx="12" cy="12" r="11" stroke-width="2" stroke="#999999"/>
+            <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)"
+              fill="#999999" />
+            <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)"
+              fill="#999999" />
+            <circle cx="12" cy="12" r="11" stroke-width="2" stroke="#999999" />
           </svg>
         </button>
       </form>
@@ -86,7 +88,7 @@
       <div class="container hero__container">
         <div class="container__wrapper">
           <div class="swiper">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper" aria-hidden="true">
               <div class="swiper-slide swiper-slide_first"></div>
               <div class="swiper-slide swiper-slide_second"></div>
               <div class="swiper-slide swiper-slide_third"></div>
@@ -307,7 +309,7 @@
           Часто задаваемые вопросы
         </h2>
         <ul class="faq__list list-reset accordion-container">
-          <li class="faq__item ac" tabindex="1">
+          <li class="faq__item ac" tabindex="0">
             <div class="ac-trigger">
               <p class="faq__question">Из&nbsp;чего формируется конечная стоимость проекта?</p>
               <svg class="faq__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
@@ -341,7 +343,7 @@
               </p>
             </div>
           </li>
-          <li class="faq__item ac" tabindex="1">
+          <li class="faq__item ac" tabindex="0">
             <div class="ac-trigger">
               <p class="faq__question">У&nbsp;меня есть свой проект. Сможем&nbsp;ли мы&nbsp;его доработать&nbsp;/
                 реализовать?</p>
@@ -376,7 +378,7 @@
               </p>
             </div>
           </li>
-          <li class="faq__item ac" tabindex="1">
+          <li class="faq__item ac" tabindex="0">
             <div class="ac-trigger">
               <p class="faq__question">Я&nbsp;выбираю между разными компаниями. В&nbsp;чём ваше отличие?</p>
               <svg class="faq__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
@@ -410,7 +412,7 @@
               </p>
             </div>
           </li>
-          <li class="faq__item ac" tabindex="1">
+          <li class="faq__item ac" tabindex="0">
             <div class="ac-trigger">
               <p class="faq__question">Могу&nbsp;ли я&nbsp;делегировать вам работу&nbsp;/ согласование
                 с&nbsp;подрядчиком&nbsp;/ организацией?</p>
@@ -445,7 +447,7 @@
               </p>
             </div>
           </li>
-          <li class="faq__item ac" tabindex="1">
+          <li class="faq__item ac" tabindex="0">
             <div class="ac-trigger">
               <p class="faq__question">Могу&nbsp;ли я&nbsp;вернуть деньги на&nbsp;каком-либо из&nbsp;этапов работ?</p>
               <svg class="faq__icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
@@ -515,7 +517,7 @@
           </li>
         </ul>
         <div class="footer__social social">
-          <a href="#" class="social__link">
+          <a href="#" class="social__link" aria-label="facebook">
             <svg class="social__facebook network" width="60" height="60" viewBox="0 0 60 60" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -523,7 +525,7 @@
             </svg>
           </a>
 
-          <a href="#" class="social__link">
+          <a href="#" class="social__link" aria-label="Вконтаке">
             <svg class="social__vk network" width="60" height="60" viewBox="0 0 60 60" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -531,7 +533,7 @@
             </svg>
           </a>
 
-          <a href="#" class="social__link">
+          <a href="#" class="social__link" aria-label="Instagram">
             <svg class="social__instagram network" width="60" height="60" viewBox="0 0 60 60" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_166612_3111)">
@@ -561,7 +563,7 @@
           <textarea name="message" class="form__message-field form__field" placeholder="Сообщение"></textarea>
           <div class="form__send">
             <button class="form__btn btn">Отправить данные</button>
-            <label for="agreement" class="form__checkbox checkbox">
+            <label for="agreement" class="form__checkbox checkbox" aria-role="checkbox">
               <input type="checkbox" name="agreement" id="agreement" class="checkbox__item" required>
               <span class="checkbox__text">Согласен на обработку данных</span>
             </label>
