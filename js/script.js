@@ -3,11 +3,28 @@ document.addEventListener("DOMContentLoaded", (e) => {
   let burgerMenu = document.querySelector(".burger");
   let header = document.querySelector(".header");
   let container = document.querySelector(".container");
+  let headerNav = document.querySelector(".header__nav");
+
+  let width = screen.width;
+  if (width < 1025) {
+    headerNav.ariaHidden = true;
+  }
 
   burgerMenu.addEventListener("click", () => {
     header.classList.toggle("open");
     document.body.classList.toggle("no-scroll");
     container.classList.toggle("burger-container");
+    if (header.classList.contains("open")) {
+      burgerMenu.ariaLabel = "Закрыть меню";
+      if (width < 1025) {
+        headerNav.ariaHidden = false;
+      }
+    } else {
+      burgerMenu.ariaLabel = "Открыть меню";
+      if (width < 1025) {
+        headerNav.ariaHidden = true;
+      }
+    }
   })
 
   // swiper

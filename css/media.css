@@ -1,6 +1,6 @@
 @media (max-width: 1919px) {
   .about__card-block {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     margin: 0 auto;
   }
@@ -24,6 +24,19 @@
   .nav__list {
     gap: 45px;
     margin-right: 45px;
+  }
+
+  .about__card-block {
+    flex-wrap: wrap;
+  }
+
+  .card-block__card,
+  .card-group__card {
+    max-width: unset;
+  }
+
+  .card-group__wrapper {
+    background-size: contain;
   }
 
   .slide__info,
@@ -192,6 +205,10 @@
   .card-group__card {
     max-width: unset;
     padding-left: 75px;
+  }
+
+  .card-group__wrapper {
+    background-size: unset;
   }
 
   .card-group__wrapper_top {

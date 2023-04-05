@@ -820,7 +820,7 @@ img {
 }
 
 .checkbox__item {
-  display: none;
+  position: absolute;
   opacity: 0;
   width: 0;
   height: 0;
@@ -861,7 +861,11 @@ img {
   outline: none;
 }
 
-.checkbox__text:focus:before {
+.form__checkbox:focus {
+  outline: none;
+}
+
+.checkbox__item:focus + .checkbox__text::before {
   border-color: var(--btn-color);
 }
 

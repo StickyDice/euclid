@@ -19,7 +19,7 @@
 <body class="page">
   <header class="header">
     <div class="container header__container">
-      <button class="burger">
+      <button class="burger" aria-label="Открыть меню">
         <span class="burger__line"></span>
         <span class="burger__line"></span>
         <span class="burger__line"></span>
@@ -563,9 +563,9 @@
           <textarea name="message" class="form__message-field form__field" placeholder="Сообщение"></textarea>
           <div class="form__send">
             <button class="form__btn btn">Отправить данные</button>
-            <label for="agreement" class="form__checkbox checkbox" aria-role="checkbox">
-              <input type="checkbox" name="agreement" id="agreement" class="checkbox__item" required>
-              <span class="checkbox__text">Согласен на обработку данных</span>
+            <label for="agreement" id="" class="form__checkbox checkbox">
+              <input type="checkbox" name="agreement" id="agreement" class="checkbox__item" required tabindex="0">
+              <span class="checkbox__text" aria-role="checkbox">Согласен на обработку данных</span>
             </label>
           </div>
         </form>
