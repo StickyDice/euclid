@@ -564,6 +564,7 @@ img {
 }
 
 .faq__item {
+  outline: none;
   margin-top: -1px;
   font-size: 24px;
   font-weight: 700;
@@ -633,6 +634,7 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
+  outline: none;
 }
 
 .ac-panel {
