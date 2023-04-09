@@ -386,6 +386,10 @@
   .search-form_active {
     top: 13px;
   }
+
+  .faq__item:focus {
+    outline: none;
+  }
 }
 
 @media (max-width: 540px) {
