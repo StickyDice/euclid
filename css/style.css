@@ -768,6 +768,7 @@ img {
   border: none;
   margin-bottom: 25px;
   transition: background-color 0.3s ease-in-out;
+  border-radius: 0;
 }
 
 .form__field::placeholder {
