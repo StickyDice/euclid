@@ -473,8 +473,12 @@
 
 @media (max-width: 425px) {
   .container {
-    max-width: 320px;
+    /* max-width: 320px; */
     padding: 0 15px;
+  }
+
+  .no-scroll .container {
+    padding-right: 15px;
   }
 
   .header__nav {
